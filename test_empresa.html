@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>pruebas api</title>
+    <script type="text/javascript" src="library/js/libs/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+        $.post("/r/wse/put", { 
+                IdEmp: "",
+                RFC: "HUCA681202QP8",
+                Nombre: "La Empresa",
+                RazonSoc: "La Empresa y Asociados S.A de C.V.",
+                DirCalle: "Otilio Montaño 156",
+                DirCol: "Colonia Tabacalera",
+                DirEnt: "01",
+                DirMun: "009",
+                DirCp: "01850",
+                NumSuc: "2",
+                OrgEmp: "ANTAD",
+                OrgEmpOtro: "AMIS",
+                OrgEmpReg: "1234567",
+                Url: "http://empresa.com",
+                PartLinea: "1",
+                ExpComer: "1",
+                TermCond: "1",
+                Desc: "Descripción de empresa"
+            },
+            function(data) {
+                console.log(data.idemp);
+                console.log(data.rfc);
+                console.log(data.nombre);
+                console.log(data.razonsocial);
+                console.log(data.calle);
+                console.log(data.colonia);
+                console.log(data.entidad);
+                console.log(data.municipio);
+                console.log(data.cp);
+                console.log(data.numsuc);
+                console.log(data.organismo);
+                console.log(data.otro_organismo);
+                console.log(data.registro_empresarial);
+                console.log(data.url);
+                console.log(data.partlinea);
+                console.log(data.expcomer);
+                console.log(data.descripcion);
+                console.log(data.status);
+                console.log(data.ackn);
+                console.log(data.errors);
+            }, "json");
+    </script>
+    
+    <body>
+        <div id="result">...</div>
+    </body>
+</html>
+ 

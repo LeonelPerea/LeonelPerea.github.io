@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>El Buen Fin // Recuperación de contraseña</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link href="../library/css/libs/bootstrap.css" rel="stylesheet">
+  <link href="../library/css/style.css" rel="stylesheet">
+      <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #f5f5f5;
+      }
+
+      .form-signin {
+        max-width: 300px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      .form-signin .form-signin-heading,
+      .form-signin .checkbox {
+        margin-bottom: 10px;
+      }
+      .form-signin input[type="text"],
+      .form-signin input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
+      .logo-login {
+        width: 310px;
+        margin: 0 auto;
+        text-align: center; 
+      }
+      .logo-login h1 {
+        color: white;
+      }
+
+    </style>
+  <link href="../library/css/libs/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../library/css/font-awesome/css/font-awesome.min.css">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="../library/js/libs/html5shiv.js"></script>
+  <![endif]-->
+
+  <!--[if IE 7]>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome-ie7.min.css">
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../library/images/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../library/images/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../library/images/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="../library/images/ico/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="../library/images/ico/favicon.png">
+  <script src="../library/js/libs/underscore-min.js"></script>
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="../library/js/libs/jquery.validationEngine-es.js" charset="utf-8"></script>
+  <script type="text/javascript" src="../library/js/libs/jquery.validationEngine.js" charset="utf-8"></script>
+   <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-26907178-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("#enviar").validationEngine({promptPosition : "topRight", scroll: true});
+            $("#acceso").validationEngine({promptPosition : "topRight", scroll: true});
+        });
+        </script>
+</head>
+
+  <body>
+
+    <div class="container">
+            <div class="logo-login">
+              <a href="/index.html"><img src="../library/images/logo_med.png"></a>
+                <br>
+            </div>
+            <div class="row-fluid">
+              <div class="span8 offset2">
+                <div class="block">
+                  <h1>Los datos proporcionados no existen en el sistema</h1>
+
+                  <p>Proporciona tu usuario (correo electrónico) y contraseña con las que registraste la cuenta.</p>
+    <p>Si no recuerdas tu contraseña puedes solicitar una reposición <a href="/reg_recover_pass.html">Aquí</a></p>
+    <p>Para activar una cuenta diferente llena nuevamente el formato de <a href="/r/registro">Registro</a></p>
+                  
+                </div>
+              </div>
+            </div>
+
+      
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  </body>
+</html>

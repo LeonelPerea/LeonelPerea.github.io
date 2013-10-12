@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>El Buen Fin // Panel de administración</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<link href="../library/css/libs/bootstrap.css" rel="stylesheet">
+	<link href="../library/css/style.css" rel="stylesheet">
+	<style>
+	body {
+		padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+	}
+	</style>
+	<link href="../library/css/libs/responsive.css" rel="stylesheet">
+	<link rel="stylesheet" href="../library/css/font-awesome/css/font-awesome.min.css">
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script src="../library/js/libs/html5shiv.js"></script>
+	<![endif]-->
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome-ie7.min.css">
+	<![endif]-->
+
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../library/images/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../library/images/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../library/images/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="../library/images/ico/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="../library/images/ico/favicon.png">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="../library/js/libs/jquery.validationEngine-es.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../library/js/libs/jquery.validationEngine.js" charset="utf-8"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#actualizaregistro').validationEngine({promptPosition : 'bottomRight', scroll: true});
+	});
+	</script>
+</head>
+
+<body>
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="brand-alt" href="/r/index">
+					<img src="../library/images/logo_med.png">
+				</a>
+				<a class="brand" href="/r/index">
+					<img src="../library/images/logo_header.png">
+				</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li>
+							<a href="/r/index"><i class="icon-home"></i> Panel principal</a>
+						</li>
+						<li>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<i class="icon-building"></i> Empresa
+							</a>
+						</li>
+						<li><a href="/admin/descargas.html"><i class="icon-download-alt"></i>  Descargas</a></li>
+						<li><a href="/admin/faqs.html"><i class="icon-question-sign"></i>   Preguntas Frecuentes</a></li>
+						<!--
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								Sucursales
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="nuevasucursal" href="#">Añadir Nueva</a></li>
+								<li><a href="#">Lista Sucursales</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								Ofertas
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="oferta-detalle.html">Añadir Nueva</a></li>
+								<li><a href="ofertas.html">Lista Ofertas</a></li>
+							</ul>
+						</li
+						<li>
+							<a href="#">
+								El Buen Fin en linea
+							</a>
+						</li>
+						-->
+					</ul>
+					<ul class="nav pull-right">
+						<li class="dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="icon-user"></i> Cuenta
+							<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="/admin/usuario.html">Editar</a></li>
+								<li><a href="/r/logout">Salir</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+	<div id="container" class="row-fluid">
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="block">
+							<h3><i class="icon-user"></i> Usuario</h3>
+							<div class="well well-small">
+								<form id="actualizaregistro" class="registro-horizontal">
+                                    <input type="hidden" value="upd" name="t" />
+									<div class="row-fluid">
+										<div class="span6">
+											<div class="control-group">
+												<label for="nombre" class="control-label">Nombre</label>
+												<div class="controls"><input name="Nombre"  class="validate[required,custom[onlyLetterSp]]" type="text"></div>
+											</div>
+											<div class="control-group">
+												<label for="" class="control-label">Apellidos</label>
+												<div class="controls">
+                                                    <input name="Apellidos"  class="validate[required,custom[onlyLetterSp]]" type="text">
+												</div>
+											</div>
+											<div class="control-group">
+												<label for="" class="control-label">Perfil de puesto</label>
+												<div class="controls">
+                                                    <input name="Puesto" class="validate[optional]" type="text">
+												</div>
+											</div>
+											<div class="control-group">
+												<label for="" class="control-label">Teléfono fijo (Con Lada)</label>
+												<div class="controls">
+                                                    <input name="Tel" class="validate[required,custom[phone]]"  type="text">
+												</div>
+											</div>
+											<div class="control-group">
+												<label for="" class="control-label">Teléfono celular</label>
+												<div class="controls">
+                                                    <input name="Cel"  class="validate[optional,custom[cellphone]]" type="text">
+												</div>
+											</div>
+										</div>
+										<div class="span6">
+											
+											<div class="control-group">
+												<label for="" class="control-label">Correo electrónico principal</label>
+												<div class="controls">
+                                                    <input type="text" id="cmail" name="Email" class="validate[required,custom[email]]" value="" />
+												</div>
+											</div>
+											<div class="control-group">
+												<label for="" class="control-label">Correo electrónico secundario</label>
+												<div class="controls">
+                                                    <input name="EmailAlt" class="validate[optional,funcCall[validateEmail]" type="text">
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="checkbox">
+                                                    <input type="checkbox" name="TermCond" class="validate[required]" value="1" id="termcond" />
+													Para aceptar y realizar cambios a esta cuenta haga clic en el recuadro *
+												</label>
+											</div>
+											<div class="accordion" id="accordion2">
+												<div class="accordion-group">
+													<div class="accordion-heading">
+														<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+															Cambiar contraseña (clic aquí)
+														</a>
+													</div>
+													<div id="collapseOne" class="accordion-body collapse">
+														<div class="accordion-inner">
+															<div class="control-group">
+																<label for="" class="control-label">Contraseña (capture sólo para cambiar)</label>
+																<div class="controls">
+                                                                    <input name="Pass"  id="cpass"  class="validate[required]" type="password">
+																</div>
+															</div>
+															<div class="control-group">
+																<label for="" class="control-label">Confirma contraseña (capture sólo para cambiar)</label>
+																<div class="controls">
+                                                                    <input name="Pass2" id="cpassconfirm" class="validate[required,equals[cpass]]" type="password">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="control-group">
+												<button type="submit" class="btn">Guardar cambios</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- </div> -->
+	</div> <!-- /container -->
+
+	<div class="footer">
+		<p>
+	    El Buen Fin © Todos los derechos reservados, México 2013
+	    Toda la información aquí publicada relativa a las características
+	    de los productos y servicios que participan en El Buen Fin © es 
+	    responsabilidad exclusiva de las tiendas que ofrecen los servicios 
+	    y/o la venta de los productos. 
+	    <br />
+	    Del mismo modo, los precios, los porcentajes de descuento, 
+	    las promociones y todas las ofertas financieras y/o económicas 
+	    aquí publicadas son responsabilidad de las tiendas que lo ofrecen.
+	    </p>
+	</div>
+		<!-- Le javascript
+		================================================== -->
+
+		<script src="../library/js/libs/bootstrap-transition.js"></script>
+		<script src="../library/js/libs/bootstrap-dropdown.js"></script>
+		<script src="../library/js/libs/bootstrap-collapse.js"></script>
+		<script src="../library/js/libs/jquery.formparams.js"></script>
+		<script src="../library/js/script-registro.js"></script>
+
+		<!-- Parche para menus de bootstrap -->
+        <script type="text/javascript">
+            $('.dropdown-toggle').click(function(e) {
+              e.preventDefault();
+              setTimeout($.proxy(function() {
+                if ('ontouchstart' in document.documentElement) {
+                  $(this).siblings('.dropdown-backdrop').off().remove();
+                }
+              }, this), 0);
+            });
+        </script>
+
+</body>
+</html>
